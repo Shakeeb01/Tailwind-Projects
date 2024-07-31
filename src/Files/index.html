@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Staycation</title>
+    <!-- Tailwind Css cdn -->
+    <link href="../output.css" rel="stylesheet" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../Files/custom.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="p-4 navbar-custom min-w-full">
+      <div class="container mx-auto flex justify-between items-center">
+        <!-- svg logo -->
+        <div class="flex items-center svgdiv">
+          <svg
+            viewBox="0 0 187 20"
+            width=""
+            height="1.1em"
+            class="Logo_staycation-logo__XmjrM Logo_staycation-logo--white__GxApj"
+            style="font-size: 16.3px; margin-left: 8px"
+            id="navsvg"
+          >
+            <path
+              d="M4.397 13.207c0 2.065 1.221 3.288 3.04 3.288 1.41 0 2.497-.897 2.497-2.229 0-1.521-1.303-2.01-2.959-2.663C3.474 10.3.543 9.24.543 5.353.543 1.848 3.745 0 7.219 0c4.506 0 6.759 2.826 6.759 6.06H9.58c0-1.712-.842-2.745-2.362-2.745-1.275 0-2.307.652-2.307 1.957 0 1.277 1.086 1.93 2.715 2.5 3.12 1.087 6.676 2.337 6.676 6.141 0 3.94-2.958 6.087-7.138 6.087C3.094 20 0 17.554 0 13.207h4.397zM22.5 4.293H18.21V.49h13v3.804h-4.314v15.218H22.5V4.293zm19.867 1.63l-2.334 7.827h4.614l-2.28-7.826zm4.098 13.588l-.733-2.31h-6.758l-.733 2.31h-4.695L40.331.489h4.044l6.867 19.022h-4.777zm14.385 0H55.99l3.502-7.147L52.762.49h5.13l4.043 7.473L65.41.489h4.858L60.85 19.511zm31.347-6.82C91.464 16.738 87.963 20 82.725 20 76.32 20 72.52 15.326 72.52 9.973 72.52 4.783 76.266 0 82.48 0c5.918 0 9.12 3.533 9.69 7.88h-4.587c-.434-2.228-2.117-3.913-4.83-3.913-3.692 0-5.755 2.88-5.755 6.006 0 3.342 2.172 6.06 5.971 6.06 2.144 0 4.044-1.468 4.56-3.343h4.668zm12.43-6.767l-2.333 7.826h4.614l-2.28-7.826zm4.099 13.587l-.733-2.31h-6.758l-.733 2.31h-4.695L102.592.489h4.044l6.867 19.022h-4.777zm11.4-15.218h-4.29V.49h13.001v3.804h-4.315v15.218h-4.397V4.293zM134.455.49h4.45v19.022h-4.45V.489zM155.055 20c-6.325 0-10.07-4.783-10.07-10s3.745-10 10.07-10c6.296 0 10.041 4.783 10.041 10s-3.745 10-10.042 10zm0-3.967c3.473 0 5.563-2.908 5.563-6.033 0-3.125-2.09-6.033-5.564-6.033s-5.564 2.908-5.564 6.033c0 3.125 2.09 6.033 5.564 6.033zm27.574-3.153V.49H187v19.02h-4.587l-6.84-12.227V19.51h-4.396V.489h4.587l6.866 12.391z"
+              fill="white"
+            ></path>
+          </svg>
+        </div>
+        <!-- Buttons and Hamburger -->
+        <div class="md:flex items-center space-x-4 rightnav mr-12">
+          <span id="navSpan" class="text-white">Gift card</span>
+          <div class="buttons">
+            <button class="bg-white text-black px-4 py-2 rounded">
+              Sign in
+            </button>
+            <button class="text-white px-4 py-2 rounded">Sign up</button>
+          </div>
+
+          <div class="navIcon bg-white flex" id="NavIcon">
+            <i class="fas fa-bars fa-1x"></i>
+          </div>
+          <!-- menu -->
+          <div id="menu">
+            <div class="flex">
+              <p class="font-semibold" style="color: #808080">Gift card</p>
+              <p class="font-semibold" style="color: #808080">Guides</p>
+              <p class="font-semibold" style="color: #808080">Blog</p>
+            </div>
+            <div class="line"></div>
+            <div class="flex">
+              <button class="flex">
+                <i class="fa-regular fa-circle-question"></i>
+                <p>Help</p>
+              </button>
+              <button class="py-2 font-semibold">Sign in</button>
+              <button class="text-white">Sign up</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-full w-full bg-cover bg-center">
+      <div class="relative z-10 flex h-full w-full heroContent">
+        <h1 class="text-white text-4xl">
+          Turn every day<br />
+          into a holiday
+        </h1>
+        <p class="text-white">
+          Enjoy magical experiences in the most<br />
+          beautiful hotels near you. At Staycation<br />
+          prices.
+        </p>
+        <button class="text-white text-base rounded-lg font-semibold">
+          Access our offers
+        </button>
+      </div>
+    </section>
+
+    <!-- Hotels -->
+    <div class="flex Hotels">
+      <div>
+        <img src="../Assets/photo-block4.webp" alt="" />
+      </div>
+      <div class="flex">
+        <h1 class="text-black font-bold">
+          In your city's most<br />
+          beautiful hotels
+        </h1>
+        <p class="text-xl" style="color: #808080; line-height: 27px">
+          From the trendiest boutique hotel to an iconic<br />
+          rooftop with a view over the skyline, enjoy a mini-<br />holiday right
+          around the corner from your home.
+        </p>
+        <button
+          class="text-base rounded-lg font-semibold"
+          style="color: #ffffff"
+        >
+          Access our offers
+        </button>
+      </div>
+    </div>
+    <!-- Rates -->
+    <div class="flex Rates">
+      <div class="flex">
+        <h1 class="text-black">At exclusive rates</h1>
+        <p>
+          As a neighbour, you're entitled to specially<br />
+          negotiated rates you won't find anywhere else.
+        </p>
+        <button class="text-base font-semibold rounded-lg text-white">
+          Access our offers
+        </button>
+      </div>
+      <div>
+        <img src="../Assets/photo-block3.webp" alt="" />
+      </div>
+    </div>
+
+    <div class="flex bottom">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M21.662 2.821C18.866.025 11.663-.252 5.124 5.422-.987 10.725-.89 17.107 3.87 20.613c4.443 3.272 10.542 3.802 15.191-1.256 5.648-6.144 5.399-13.74 2.601-16.536z"
+        ></path>
+        <path
+          fill="#FFF"
+          d="M8.104 14.644a.567.567 0 01-.804 0h-.001l-2.53-2.529a.57.57 0 01.805-.807l2.128 2.127 6.186-6.185a.57.57 0 01.805.805l-6.589 6.589zm4.895-1.92a.546.546 0 01-.387-.93l4.047-4.047a.549.549 0 01.774 0 .549.549 0 010 .774l-4.046 4.047a.545.545 0 01-.388.156zm4.964 1.236l-1.593 1.591a.544.544 0 01-.773 0 .549.549 0 010-.774l1.594-1.594a.547.547 0 11.79.755l-.016.017-.002.005zm0-2.985l-3.085 3.084a.549.549 0 01-.774-.775l3.087-3.087a.549.549 0 01.774.775l-.002.003z"
+        ></path>
+      </svg>
+      <div>
+        <i class="fa-regular fa-circle-question text-white"></i>
+        <p class="text-white font-semibold">Help</p>
+      </div>
+    </div>
+
+    <!-- Taste and mood -->
+    <div class="relative w-full max-w-4xl flex Taste align-middle">
+      <h1
+        class="text-black font-bold"
+        style="font-size: 48px; line-height: 55px"
+      >
+        For every taste and every<br />
+        mood
+      </h1>
+      <div class="scroll-container flex py-4 px-2">
+        <div class="scroll-item rounded-lg">
+          <div id="leftIcon">
+            <i
+              class="fa-solid fa-angle-left"
+              style="color: rgba(0, 0, 0, 0.719)"
+            ></i>
+          </div>
+          <img
+            src="../Assets/West side (1).jpeg"
+            alt="Image 1"
+            class="rounded-md"
+          />
+          <p class="text-center font-semibold">
+            Live the American Dream in an open<br />
+            air hot tub.
+          </p>
+        </div>
+        <div class="scroll-item rounded-lg">
+          <img src="../Assets/Life.jpeg" alt="Image 2" class="rounded-md" />
+          <p class="text-center font-semibold">
+            Relax in a jacuzzi heated to 35°C and<br />
+            surrounded by nature.
+          </p>
+        </div>
+        <div class="scroll-item rounded-lg">
+          <img src="../Assets/Jacuzzi.jpeg" alt="Image 3" class="rounded-md" />
+          <p class="text-center font-semibold">
+            Learn the art of mixology in a<br />
+            hidden speakeasy
+          </p>
+        </div>
+        <div class="scroll-item rounded-lg">
+          <div id="rightIcon" class="flex">
+            <i
+              class="fa-solid fa-angle-right"
+              style="color: rgba(0, 0, 0, 0.719)"
+            ></i>
+          </div>
+          <img src="../Assets/Divina.jpeg" alt="Image 4" class="rounded-md" />
+          <p class="text-center text-base font-semibold">
+            Swim above the clouds in a rooftop<br />
+            pool.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- How it works -->
+    <div class="flex works">
+      <h1 class="text-black font-bold" style="font-size: 48px">
+        How it works ?
+      </h1>
+      <div class="flex">
+        <div>
+          <img src="../Assets/emoji_lightning.webp" alt="" />
+          <h3>Every Wednesday morning</h3>
+          <p>Sales open at 9am every Wednesday.</p>
+        </div>
+        <div>
+          <img src="../Assets/emoji_ticket.webp" alt="" />
+          <h3>First come, first served</h3>
+          <p>Offers are limited, so be quick.</p>
+        </div>
+        <div>
+          <img src="../Assets/emoji_hatching_chick.webp" alt="" />
+          <h3>Every Wednesday morning</h3>
+          <p>
+            New experiences, new surprises...your life in the city will never be
+            the same again.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- every day -->
+    <div class="everyDay flex">
+      <div>
+        <img src="../Assets/Screenshot (41).png" alt="" />
+      </div>
+      <div>
+        <h1>
+          Turn every day into a<br />
+          holiday,
+          <span
+            >just around<br />
+            the corner.</span
+          >
+        </h1>
+      </div>
+    </div>
+    <!-- news -->
+    <div class="flex grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 news">
+      <h1 class="text-black font-bold">On the news</h1>
+      <div class="flex">
+        <div class="bg-white rounded-lg shadow-lg">
+          <q
+            >These veritable "24-hour programs" offered by Staycation are
+            gaining more and more followers.</q
+          >
+          <div class="flex">
+            <img
+              src="../Assets/CNews3.webp"
+              alt="Image 2"
+              class="w-full rounded-lg"
+            />
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg">
+          <q
+            >These veritable "24-hour programs" offered by Staycation are
+            gaining more and more followers.</q
+          >
+          <div class="flex">
+            <img
+              src="../Assets/DoItInParis.webp"
+              alt="Image 2"
+              class="w-full rounded-lg"
+            />
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg">
+          <q
+            >I'm glad I didn't have to wait for my holidays to enjoy myself.
+            Goodbye routine!</q
+          >
+          <div class="flex">
+            <img
+              src="../Assets/LeBonbon.webp"
+              alt="Image 2"
+              class="w-full rounded-lg"
+            />
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow-lg">
+          <q
+            >Already in need of a vacation? What if we escaped without leaving
+            our city... and without breaking the bank.</q
+          >
+          <div class="flex">
+            <img
+              src="../Assets/MyLittleParis.webp"
+              alt="Image 2"
+              class="w-full rounded-lg"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Accordian -->
+    <div class="accordianSection w-full flex">
+      <div class="leftSection">
+        <h1>
+          What's on this weekend: 5 good <br />
+          reasons to check out Staycation
+        </h1>
+      </div>
+      <div class="accordian" style="margin-top: -40px">
+        <div class="flex" id="AccordianIcon">
+          <div class="flex">
+            <h4 class="text-xl font-bold">Upgrade your romantic gateways</h4>
+            <div id="expandIcon">
+              <i
+                class="fa-solid fa-plus"
+                id="AccrdIcon"
+                style="
+                  margin-top: 4px;
+                  margin-left: 10px;
+                  color: #ff2e63;
+                  font-size: 20px;
+                "
+              ></i>
+            </div>
+          </div>
+          <p>
+            Throw on a bathrobe and get ready for 24 hours of magic a stone's
+            throw from your home. Ideal for date nights: escape to one of the
+            most beautiful 4 or 5 star hotels in your neighbourhood, city, or
+            region. On the programme is a hotel room with a jacuzzi, a
+            gastronomic dinner, a couple's massage, a private pool... your days
+            will never look the same.
+          </p>
+        </div>
+        <div class="flex" id="AccordianIcon">
+          <div class="flex">
+            <h4 class="text-xl font-bold">Discover hidden gems near you</h4>
+            <div id="expandIcon">
+              <i
+                class="fa-solid fa-plus"
+                id="AccrdIcon"
+                style="
+                  margin-top: 4px;
+                  margin-left: 10px;
+                  color: #ff2e63;
+                  font-size: 20px;
+                "
+              ></i>
+            </div>
+          </div>
+          <p>
+            No need to go far for a change of scenery. Discover instant holidays
+            in unexpected places near you. Explore a new neighbourhood, the most
+            beautiful countryside manors, or the best destinations within 2
+            hours of your home.
+          </p>
+        </div>
+        <div class="flex" id="AccordianIcon">
+          <div class="flex">
+            <h4 class="text-xl font-bold">Book a last-minute spa weekend</h4>
+            <div id="expandIcon">
+              <i
+                class="fa-solid fa-plus"
+                id="AccrdIcon"
+                style="
+                  margin-top: 4px;
+                  margin-left: 10px;
+                  color: #ff2e63;
+                  font-size: 20px;
+                "
+              ></i>
+            </div>
+          </div>
+          <p>
+            Enjoy a relaxing spa day near you. With a combination of private
+            jacuzzis, pools, massages, hammams and saunas, bad vibes don't stand
+            a chance.
+          </p>
+        </div>
+        <div class="flex" id="AccordianIcon">
+          <div class="flex">
+            <h4 class="text-xl font-bold">Give a memorable gift</h4>
+
+            <div id="expandIcon">
+              <i
+                class="fa-solid fa-plus"
+                id="AccrdIcon"
+                style="
+                  margin-top: 4px;
+                  margin-left: 10px;
+                  color: #ff2e63;
+                  font-size: 20px;
+                "
+              ></i>
+            </div>
+          </div>
+          <p>
+            Whether its an anniversary or a birthday gift, Staycation upgrades
+            every occasion.
+          </p>
+        </div>
+        <div class="flex" id="AccordianIcon">
+          <div class="flex">
+            <h4 class="text-xl font-bold">End the routine</h4>
+            <div id="expandIcon">
+              <i
+                class="fa-solid fa-plus"
+                id="AccrdIcon"
+                style="
+                  margin-top: 4px;
+                  margin-left: 10px;
+                  color: #ff2e63;
+                  font-size: 20px;
+                "
+              ></i>
+            </div>
+          </div>
+          <p>
+            At Staycation, we believe life's for living. For letting your hair
+            down, for diving in, tucking in and joining in. It's about being
+            your spontaneous best, and transforming your everyday into an
+            unforgettable 24h experience.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Clubs -->
+    <div class="clubs flex">
+      <h1 class="font-bold" style="font-size: 48px">10 different clubs</h1>
+      <div class="firstRow flex">
+        <div class="flex">
+          <div class="flex">
+            <i
+              class="fa-regular fa-clock"
+              style="color: white; font-size: 20px"
+            ></i>
+          </div>
+          <span>Staycation Bruxelles</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex">
+          <div class="flex">
+            <i
+              class="fa-regular fa-clock"
+              style="color: white; font-size: 20px"
+            ></i>
+          </div>
+          <span>Staycation Paris</span>
+
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex">
+          <div class="flex">
+            <i
+              class="fa-regular fa-clock"
+              style="color: white; font-size: 20px"
+            ></i>
+          </div>
+          <span>Staycation Madrid</span>
+
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="secondRow flex">
+        <div class="flex">
+          <div class="flex">
+            <i
+              class="fa-regular fa-clock"
+              style="color: white; font-size: 20px"
+            ></i>
+          </div>
+          <span>Staycation Bruxelles</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex">
+          <div class="flex">
+            <i
+              class="fa-regular fa-clock"
+              style="color: white; font-size: 20px"
+            ></i>
+          </div>
+          <span>Staycation Paris</span>
+
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex">
+          <div class="flex">
+            <i
+              class="fa-regular fa-clock"
+              style="color: white; font-size: 20px"
+            ></i>
+          </div>
+          <span>Staycation Madrid</span>
+
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="thirdRow flex">
+        <div class="flex">
+          <div class="flex">
+            <i
+              class="fa-regular fa-clock"
+              style="color: white; font-size: 20px"
+            ></i>
+          </div>
+          <span>Staycation Bruxelles</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex">
+          <div class="flex">
+            <i
+              class="fa-regular fa-clock"
+              style="color: white; font-size: 20px"
+            ></i>
+          </div>
+          <span>Staycation Paris</span>
+
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="flex">
+          <div class="flex">
+            <i
+              class="fa-regular fa-clock"
+              style="color: white; font-size: 20px"
+            ></i>
+          </div>
+          <span>Staycation Madrid</span>
+
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+
+      <div class="fourthRow flex">
+        <div class="flex">
+          <div class="flex">
+            <i
+              class="fa-regular fa-clock"
+              style="color: white; font-size: 20px"
+            ></i>
+          </div>
+          <span>Staycation Bruxelles</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="flex">
+      <div class="upperSection flex">
+        <div class="upperLeft flex">
+          <div>
+            <svg
+              viewBox="0 0 187 20"
+              width=""
+              height="1.1em"
+              class="Logo_staycation-logo__XmjrM Logo_staycation-logo--white__GxApj"
+            >
+              <path
+                d="M4.397 13.207c0 2.065 1.221 3.288 3.04 3.288 1.41 0 2.497-.897 2.497-2.229 0-1.521-1.303-2.01-2.959-2.663C3.474 10.3.543 9.24.543 5.353.543 1.848 3.745 0 7.219 0c4.506 0 6.759 2.826 6.759 6.06H9.58c0-1.712-.842-2.745-2.362-2.745-1.275 0-2.307.652-2.307 1.957 0 1.277 1.086 1.93 2.715 2.5 3.12 1.087 6.676 2.337 6.676 6.141 0 3.94-2.958 6.087-7.138 6.087C3.094 20 0 17.554 0 13.207h4.397zM22.5 4.293H18.21V.49h13v3.804h-4.314v15.218H22.5V4.293zm19.867 1.63l-2.334 7.827h4.614l-2.28-7.826zm4.098 13.588l-.733-2.31h-6.758l-.733 2.31h-4.695L40.331.489h4.044l6.867 19.022h-4.777zm14.385 0H55.99l3.502-7.147L52.762.49h5.13l4.043 7.473L65.41.489h4.858L60.85 19.511zm31.347-6.82C91.464 16.738 87.963 20 82.725 20 76.32 20 72.52 15.326 72.52 9.973 72.52 4.783 76.266 0 82.48 0c5.918 0 9.12 3.533 9.69 7.88h-4.587c-.434-2.228-2.117-3.913-4.83-3.913-3.692 0-5.755 2.88-5.755 6.006 0 3.342 2.172 6.06 5.971 6.06 2.144 0 4.044-1.468 4.56-3.343h4.668zm12.43-6.767l-2.333 7.826h4.614l-2.28-7.826zm4.099 13.587l-.733-2.31h-6.758l-.733 2.31h-4.695L102.592.489h4.044l6.867 19.022h-4.777zm11.4-15.218h-4.29V.49h13.001v3.804h-4.315v15.218h-4.397V4.293zM134.455.49h4.45v19.022h-4.45V.489zM155.055 20c-6.325 0-10.07-4.783-10.07-10s3.745-10 10.07-10c6.296 0 10.041 4.783 10.041 10s-3.745 10-10.042 10zm0-3.967c3.473 0 5.563-2.908 5.563-6.033 0-3.125-2.09-6.033-5.564-6.033s-5.564 2.908-5.564 6.033c0 3.125 2.09 6.033 5.564 6.033zm27.574-3.153V.49H187v19.02h-4.587l-6.84-12.227V19.51h-4.396V.489h4.587l6.866 12.391z"
+                fill="#FF2E63"
+              ></path>
+            </svg>
+            <p style="color: white; margin-top: 5px" class="font-semibold">
+              Upgrade your everyday
+            </p>
+          </div>
+          <div class="flex" style="margin-top: 20px">
+            <span
+              ><img
+                style="width: 139px; height: 44px; margin-top: 8px"
+                src="../Assets/footer-img1.svg"
+                alt=""
+            /></span>
+            <span
+              ><img
+                style="height: 147px; height: 57px"
+                src="../Assets/footerImg-2.webp"
+                alt=""
+            /></span>
+          </div>
+        </div>
+        <div class="upperRight flex">
+          <ul class="text-white">
+            <h2>Staycation</h2>
+            <li>About</li>
+            <li>Jobs</li>
+            <li>Press kit</li>
+            <li>Become a partner</li>
+          </ul>
+          <ul class="text-white">
+            <h2>Experience</h2>
+            <li>Catalog</li>
+            <li>Guides</li>
+            <li>Gift Card</li>
+          </ul>
+          <ul class="text-white">
+            <h2>Assistance</h2>
+            <li>Contact us</li>
+            <li>Help</li>
+          </ul>
+          <ul class="text-white">
+            <h2>Community</h2>
+            <li>Blog</li>
+            <li>Referral</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerLine"></div>
+
+      <div class="bottomSection flex">
+        <ul class="flex">
+          <li style="color: #999">Secure Payment</li>
+          <li>
+            <svg
+              width="32"
+              height="24"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M19.5875 8.00759C19.5875 8.00759 19.9042 9.50223 19.975 9.81563H18.5833C18.7208 9.45804 19.25 8.06786 19.25 8.06786C19.2417 8.07991 19.3875 7.70223 19.4708 7.4692L19.5875 8.00759ZM24 1.92857V16.0714C24 17.1362 23.1042 18 22 18H2C0.895833 18 0 17.1362 0 16.0714V1.92857C0 0.863839 0.895833 0 2 0H22C23.1042 0 24 0.863839 24 1.92857ZM6.35417 12.0214L8.9875 5.78571H7.21667L5.57917 10.0446L5.4 9.1808L4.81667 6.31205C4.72083 5.91429 4.425 5.80179 4.05833 5.78571H1.3625L1.33333 5.91027C1.99167 6.07098 2.57917 6.30402 3.09167 6.59732L4.58333 12.0214H6.35417ZM10.2875 12.0295L11.3375 5.78571H9.6625L8.61667 12.0295H10.2875ZM16.1167 9.98839C16.125 9.27723 15.675 8.73482 14.7125 8.28884C14.125 8.00357 13.7667 7.81071 13.7667 7.51741C13.775 7.25223 14.0708 6.97902 14.7292 6.97902C15.275 6.96696 15.675 7.09152 15.975 7.21607L16.125 7.28438L16.3542 5.93438C16.025 5.80982 15.5 5.6692 14.8542 5.6692C13.2 5.6692 12.0375 6.52098 12.0292 7.73438C12.0167 8.63036 12.8625 9.12857 13.4958 9.42991C14.1417 9.73527 14.3625 9.93616 14.3625 10.2054C14.3542 10.6232 13.8375 10.8161 13.3583 10.8161C12.6917 10.8161 12.3333 10.7156 11.7875 10.4826L11.5667 10.3821L11.3333 11.7844C11.725 11.9571 12.45 12.1098 13.2 12.1179C14.9583 12.1219 16.1042 11.2821 16.1167 9.98839ZM22 12.0295L20.65 5.78571H19.3542C18.9542 5.78571 18.65 5.89821 18.4792 6.30402L15.9917 12.0295H17.75C17.75 12.0295 18.0375 11.258 18.1 11.0933H20.25C20.3 11.3143 20.45 12.0295 20.45 12.0295H22Z"
+                fill="#555555"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            <svg
+              width="32"
+              height="24"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20.1208 15.1594C20.1208 15.4326 19.9292 15.6295 19.6542 15.6295C19.3708 15.6295 19.1875 15.4205 19.1875 15.1594C19.1875 14.8982 19.3708 14.6893 19.6542 14.6893C19.9292 14.6893 20.1208 14.8982 20.1208 15.1594ZM7.17083 14.6893C6.875 14.6893 6.70417 14.8982 6.70417 15.1594C6.70417 15.4205 6.875 15.6295 7.17083 15.6295C7.44167 15.6295 7.625 15.4326 7.625 15.1594C7.62083 14.8982 7.44167 14.6893 7.17083 14.6893ZM12.0667 14.6772C11.8417 14.6772 11.7042 14.8179 11.6708 15.0268H12.4667C12.4292 14.7978 12.2833 14.6772 12.0667 14.6772ZM16.5583 14.6893C16.275 14.6893 16.1042 14.8982 16.1042 15.1594C16.1042 15.4205 16.275 15.6295 16.5583 15.6295C16.8417 15.6295 17.025 15.4326 17.025 15.1594C17.025 14.8982 16.8417 14.6893 16.5583 14.6893ZM20.9708 15.7379C20.9708 15.75 20.9833 15.758 20.9833 15.7821C20.9833 15.7942 20.9708 15.8022 20.9708 15.8263C20.9583 15.8384 20.9583 15.8464 20.95 15.8585C20.9375 15.8705 20.9292 15.8786 20.9042 15.8786C20.8917 15.8906 20.8833 15.8906 20.8583 15.8906C20.8458 15.8906 20.8375 15.8906 20.8125 15.8786C20.8 15.8786 20.7917 15.8665 20.7792 15.8585C20.7667 15.8464 20.7583 15.8384 20.7583 15.8263C20.7458 15.8062 20.7458 15.7942 20.7458 15.7821C20.7458 15.7621 20.7458 15.75 20.7583 15.7379C20.7583 15.7179 20.7708 15.7058 20.7792 15.6937C20.7917 15.6817 20.8 15.6817 20.8125 15.6737C20.8333 15.6616 20.8458 15.6616 20.8583 15.6616C20.8792 15.6616 20.8917 15.6616 20.9042 15.6737C20.925 15.6857 20.9375 15.6857 20.95 15.6937C20.9625 15.7018 20.9583 15.7179 20.9708 15.7379ZM20.8792 15.7942C20.9 15.7942 20.9 15.7821 20.9125 15.7821C20.925 15.7701 20.925 15.7621 20.925 15.75C20.925 15.7379 20.925 15.7299 20.9125 15.7179C20.9 15.7179 20.8917 15.7058 20.8667 15.7058H20.8V15.8464H20.8333V15.7902H20.8458L20.8917 15.8464H20.925L20.8792 15.7942ZM24 1.92857V16.0714C24 17.1362 23.1042 18 22 18H2C0.895833 18 0 17.1362 0 16.0714V1.92857C0 0.863839 0.895833 0 2 0H22C23.1042 0 24 0.863839 24 1.92857ZM2.66667 7.5375C2.66667 10.6112 5.25417 13.1022 8.4375 13.1022C9.57083 13.1022 10.6833 12.7728 11.625 12.1741C8.5875 9.79152 8.60833 5.29554 11.625 2.91295C10.6833 2.31027 9.57083 1.98482 8.4375 1.98482C5.25417 1.9808 2.66667 4.47589 2.66667 7.5375ZM12 11.9089C14.9375 9.69911 14.925 5.39196 12 3.17009C9.075 5.39196 9.0625 9.70312 12 11.9089ZM6.07083 14.9746C6.07083 14.625 5.83333 14.396 5.45833 14.3839C5.26667 14.3839 5.0625 14.4402 4.925 14.6451C4.825 14.4804 4.65417 14.3839 4.41667 14.3839C4.25833 14.3839 4.1 14.4402 3.975 14.6009V14.4241H3.63333V15.8987H3.975C3.975 15.1393 3.87083 14.6853 4.35 14.6853C4.775 14.6853 4.69167 15.0951 4.69167 15.8987H5.02083C5.02083 15.1634 4.91667 14.6853 5.39583 14.6853C5.82083 14.6853 5.7375 15.0871 5.7375 15.8987H6.07917V14.9746H6.07083ZM7.94167 14.4241H7.6125V14.6009C7.5 14.4683 7.34167 14.3839 7.125 14.3839C6.69583 14.3839 6.36667 14.7134 6.36667 15.1594C6.36667 15.6094 6.69583 15.9348 7.125 15.9348C7.34167 15.9348 7.5 15.8585 7.6125 15.7179V15.9027H7.94167V14.4241ZM9.62917 15.4527C9.62917 14.85 8.675 15.1232 8.675 14.842C8.675 14.6129 9.17083 14.6491 9.44583 14.7978L9.58333 14.5366C9.19167 14.2915 8.325 14.2955 8.325 14.8661C8.325 15.4406 9.27917 15.1996 9.27917 15.4688C9.27917 15.7219 8.71667 15.7018 8.41667 15.5009L8.27083 15.754C8.7375 16.0594 9.62917 15.9951 9.62917 15.4527ZM11.1042 15.8263L11.0125 15.5531C10.8542 15.6375 10.5042 15.7299 10.5042 15.3884V14.7214H11.05V14.4241H10.5042V13.9741H10.1625V14.4241H9.84583V14.7174H10.1625V15.3884C10.1625 16.0955 10.8833 15.967 11.1042 15.8263ZM11.6583 15.2879H12.8042C12.8042 14.6371 12.4958 14.3799 12.0792 14.3799C11.6375 14.3799 11.3208 14.6973 11.3208 15.1554C11.3208 15.979 12.2625 16.1156 12.7292 15.7259L12.5708 15.4848C12.2458 15.742 11.7542 15.7179 11.6583 15.2879ZM14.1208 14.4241C13.9292 14.3438 13.6375 14.3518 13.4875 14.6009V14.4241H13.1458V15.8987H13.4875V15.067C13.4875 14.6009 13.8833 14.6612 14.0208 14.7295L14.1208 14.4241ZM14.5625 15.1594C14.5625 14.7013 15.0458 14.5527 15.425 14.8219L15.5833 14.5607C15.1 14.1951 14.2208 14.396 14.2208 15.1634C14.2208 15.9589 15.1542 16.1196 15.5833 15.7661L15.425 15.5049C15.0417 15.7661 14.5625 15.6094 14.5625 15.1594ZM17.3417 14.4241H17V14.6009C16.6542 14.1589 15.7542 14.408 15.7542 15.1594C15.7542 15.9308 16.6875 16.1518 17 15.7179V15.9027H17.3417V14.4241ZM18.7458 14.4241C18.6458 14.3759 18.2875 14.3076 18.1125 14.6009V14.4241H17.7833V15.8987H18.1125V15.067C18.1125 14.625 18.4875 14.6531 18.6458 14.7295L18.7458 14.4241ZM20.425 13.8254H20.0958V14.6009C19.7542 14.1629 18.85 14.396 18.85 15.1594C18.85 15.9388 19.7875 16.1478 20.0958 15.7179V15.9027H20.425V13.8254ZM20.7417 10.808V10.9929H20.775V10.808H20.8542V10.7759H20.6625V10.808H20.7417ZM21.0167 15.7821C21.0167 15.7621 21.0167 15.7379 21.0042 15.7179C20.9917 15.7058 20.9833 15.6857 20.9708 15.6737C20.9583 15.6616 20.9375 15.6536 20.925 15.6415C20.9042 15.6415 20.8792 15.6295 20.8583 15.6295C20.8458 15.6295 20.825 15.6415 20.8 15.6415C20.7792 15.6536 20.7667 15.6616 20.7542 15.6737C20.7333 15.6857 20.7208 15.7058 20.7208 15.7179C20.7083 15.7379 20.7083 15.7621 20.7083 15.7821C20.7083 15.7942 20.7083 15.8143 20.7208 15.8384C20.7208 15.8504 20.7333 15.8705 20.7542 15.8826C20.7667 15.8946 20.775 15.9027 20.8 15.9147C20.8208 15.9268 20.8458 15.9268 20.8583 15.9268C20.8792 15.9268 20.9042 15.9268 20.925 15.9147C20.9375 15.9027 20.9583 15.8946 20.9708 15.8826C20.9833 15.8705 20.9917 15.8504 21.0042 15.8384C21.0167 15.8143 21.0167 15.7942 21.0167 15.7821ZM21.15 10.7719H21.0917L21.025 10.9125L20.9583 10.7719H20.9V10.9888H20.9333V10.8241L21 10.9647H21.0458L21.1042 10.8241V10.9888H21.15V10.7719ZM21.3333 7.5375C21.3333 4.47589 18.7458 1.9808 15.5625 1.9808C14.4292 1.9808 13.3167 2.31027 12.375 2.90893C15.3792 5.29152 15.425 9.79955 12.375 12.1701C13.3167 12.7728 14.4375 13.0982 15.5625 13.0982C18.7458 13.1022 21.3333 10.6112 21.3333 7.5375Z"
+                fill="#555555"
+              ></path>
+            </svg>
+          </li>
+          <li>
+            <svg
+              width="32"
+              height="24"
+              viewBox="0 0 24 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M24 16.0714V1.92857C24 0.863839 23.1042 0 22 0H2C0.895833 0 0 0.863839 0 1.92857V16.0714C0 17.1362 0.895833 18 2 18H22C23.1042 18 24 17.1362 24 16.0714ZM12.4529 8.58545H7.2177V8.92706H12.4594V8.93339C12.4594 10.0679 12.1336 11.3204 11.1889 12.0648C10.2442 12.8113 8.67629 13.0453 7.23082 13.0453C5.74161 13.0453 4.19773 12.8366 3.24647 12.0543C2.34989 11.3141 2 10.0341 2 8.93339C2 7.88326 2.17932 6.71293 3.00374 5.98543C3.96374 5.14195 5.67819 4.82143 7.23082 4.82143C8.72002 4.82143 10.3885 5.11454 11.342 5.90108C12.1424 6.5611 12.4048 7.58804 12.4529 8.58545ZM21.8655 6.78252C21.8655 5.78089 21.0411 4.98591 20.0024 4.98591C19.9757 4.98591 19.947 4.98418 19.9178 4.98243C19.868 4.97944 19.8169 4.97637 19.7727 4.98169H12.8034V8.58545H20.1467C21.1089 8.50532 21.8655 7.73143 21.8655 6.78252ZM12.8045 8.92727H20.0866C21.1515 8.97788 22 9.87829 22 10.9179C22 11.9575 21.1515 12.8052 20.0866 12.8558V12.86H12.8045V8.92727Z"
+                fill="#555555"
+              ></path>
+            </svg>
+          </li>
+        </ul>
+
+        <ul class="flex" style="color: #999">
+          <li>Sitemap</li>
+          <li>Privacy Policy</li>
+          <li>Referral program terms and conditions</li>
+          <li>Terms and conditions</li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- javascript file -->
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>
